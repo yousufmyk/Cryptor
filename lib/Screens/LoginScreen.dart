@@ -14,9 +14,9 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             //borderRadius: BorderRadius.circular(40),
-            gradient: const RadialGradient(
+            gradient: RadialGradient(
               center: AlignmentDirectional.topEnd,
               //center: Alignment(-0.8, -0.8),
               colors: [Color(0xFF1d1963), Color(0XFF3a1362)],
@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
             // image:
             //   AssetImage("Assets/Images/crpytorBackgroundImage.png"))),
           ),
-          child: Column(
+          child: const Column(
             children: [
               Image(
                   //width: 400,
