@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import 'LoginScreen.dart';
+
 class ChooseAuthScreen extends StatefulWidget {
   const ChooseAuthScreen({super.key});
 
@@ -42,8 +44,13 @@ class _ChooseAuthScreenState extends State<ChooseAuthScreen> {
                 GestureDetector(
                   onTap: () {
                     if (kDebugMode) {
-                      print("Loign Button Pressed");
+                      print("Sign In");
                     }
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LoginScreen()),
+                    );
                   },
                   child: Container(
                     height: 60,
@@ -58,7 +65,7 @@ class _ChooseAuthScreenState extends State<ChooseAuthScreen> {
                     ),
                     child: const Center(
                         child: Text(
-                      "Log In",
+                      "Sign In",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w500,

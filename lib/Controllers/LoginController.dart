@@ -2,14 +2,15 @@ import 'package:cryptor/Routes/Routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class DashboardController extends GetxController {
-  // @override
-  // void dispose() {
-  //   changeNameController.dispose();
-  //   chatController.dispose();
-  //   dropdownController.dispose();
-  //   super.dispose();
-  // }
+class LoginController extends GetxController {
+  final userNameController = TextEditingController();
+  final passwordController = TextEditingController();
+  @override
+  void dispose() {
+    super.dispose();
+    userNameController.dispose();
+    passwordController.dispose();
+  }
 
   navigateToService() {
     Get.toNamed(Routes.loginScreen);

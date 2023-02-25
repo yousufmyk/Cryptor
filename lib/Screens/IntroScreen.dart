@@ -16,7 +16,7 @@ class IntroScreen extends StatefulWidget {
 class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(DashboardController());
+    final controller = Get.put(LoginController());
     return Scaffold(
       body: Container(
           height: MediaQuery.of(context).size.height,
